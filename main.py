@@ -1,4 +1,5 @@
-print('Hello Andrei')
-user_name = input('What is your name :  ')
-print(type(user_name))
-print('Hello'+' '+user_name)
+# Numbers 
+print(type(45+56))
+print(type(785-566))
+print(type(int('100')))
+print(4/7)
