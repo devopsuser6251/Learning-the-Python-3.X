@@ -1,4 +1,4 @@
-#Learning the Python Language
-print(f'Build the password checker')
-enter_pass = eval(input('Enter the password :  '))
-print(enter_pass)
+print('Hello Andrei')
+user_name = input('What is your name :  ')
+print(type(user_name))
+print('Hello'+' '+user_name)
