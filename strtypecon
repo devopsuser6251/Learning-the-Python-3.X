@@ -1,0 +1,17 @@
+list1=[25,33,26]
+list2=[24,34,26]
+print(list1>list2)
+print(bin(list1[0]))
+print(bin(5))
+print(int('0b101',2))
+#augmented assignment operator
+#expression vs statement 
+some_value = 5
+some_value = some_value+2
+some_value += 2
+some_value -= 3
+print(some_value)
+'Hello world'
+print(type('Hello world '))
+#string concatenation
+print('Prashant '+'Sharma')
