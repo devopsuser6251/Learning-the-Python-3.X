@@ -1,0 +1,18 @@
+nameR = 'Happy new year 2020      '
+nameB ='''
+Hello world program 
+'''
+print(nameR[0:5])
+print(nameB[:])
+print(nameR[-3:-1])
+print(nameR[0:9:2])
+print(nameR[::-1])
+print(nameR.strip())
+print(nameR.rstrip())
+print(nameR.lstrip())
+print(nameR.find("a",0,8),len(nameR))
+print(nameR.count("a"))
+print(nameR.replace('2020','2021'))
+print(nameR.upper())
+print(nameR.lower())
+print(nameR.title())
