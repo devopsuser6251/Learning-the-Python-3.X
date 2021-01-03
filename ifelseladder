@@ -1,0 +1,21 @@
+#Grading System
+Physics,Chemistry,maths=[int(marks) for marks in input('Please enter your physics,Chemistry and maths marks : ').split(',') ]
+average=(Physics+Chemistry+maths/3)
+if Physics<=35 or Chemistry<=35 or maths<=35:
+  print('you have failed the exam')
+  if Physics<=35:
+    print('You are failed in Phsyics')
+  elif Chemistry<=35:
+    print('You are failed in Chemistry') 
+  else:
+    print('You are failed in maths')  
+else:
+  print('You are passed')
+  if average<=59:
+    print('Your grade is C')
+  elif average<=69:
+    print('Your garde is B')
+  else:
+    print('Your grade is A')
+
+
