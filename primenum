@@ -4,7 +4,6 @@ user_io=eval(input('Enter the number : '))
 if user_io>0:
   for j in range(2,user_io):
     if user_io%j!=0:
-      j+=j
       if j>user_io:
         print('Number is prime number')
         break
