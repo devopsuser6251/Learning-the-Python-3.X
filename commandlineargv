@@ -1,0 +1,11 @@
+#Commandline Arguments
+import sys
+lst=sys.argv
+for item in lst:
+  print(item)
+print(len(lst))
+print(len[0])
+#Product of commandline arguments
+import sys
+lst=sys.argv
+print('Product is',lst[1],lst[2])
