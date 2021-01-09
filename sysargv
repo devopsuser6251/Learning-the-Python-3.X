@@ -1,18 +1,20 @@
-#Date 9 jan 2021
+#Date 9 Jan 2021
 import sys 
 print("ATM","\n1.Check Balance","\n2.WithDraw","\n3.Deposit Cash","\n4.Deposit Check")
 user_in=sys.argv
 print("Please enter your preferred option")
 accBalance=10000
-for item in user_in[1]:
-  if item==1:
-    print("Your present account balance is ",accBalance)
-  elif item==2:
-    user_Var1=eval(input("Enter the amount you want to withdraw: "))
-    print("You have withdrawn the amount ",user_Var1," and Your remainng account balance is ",(accBalance-user_Var1))
-  elif item==3:
-    user_Var2=eval(input('Please enter the amount you want to Deposit : '))
-    print("You have deposited the amount ",user_Var2," and Your current account balance is ",(accBalance+user_Var2))
-  else:
-    user_Var3=eval(input("Please enter the amount of check you want to deposit : "))
-    print("The amount you have deposited by check is ",user_Var3," and Your current account balance is ",(accBalance+user_Var3))
+lst=user_in[1]
+for item in lst:
+    if int(item)==1:
+        print("Your present account balance is ",accBalance)
+    elif int(item)==2:
+        user_Var1=eval(input("Enter the amount you want to withdraw: "))
+        print("You have withdrawn the amount ",user_Var1," and Your remainng account balance is ",(accBalance-user_Var1))
+    elif int(item)==3:
+        user_Var2=eval(input('Please enter the amount you want to Deposit : '))
+        print("You have deposited the amount ",user_Var2," and Your current account balance is ",(accBalance+user_Var2))
+    elif int(item)==4:
+        user_Var3=eval(input("Please enter the amount of check you want to deposit : "))
+        print("The amount you have deposited by check is ",user_Var3," and Your current account balance is ",(accBalance+user_Var3))
+    
