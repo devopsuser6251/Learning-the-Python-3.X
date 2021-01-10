@@ -1,0 +1,42 @@
+'''
+def message(name):
+  def hello():
+    return "Hello "
+  result=hello()+name
+  return result
+
+print(message("Prashant"))
+'''
+'''
+def display(fun):
+  return "Hello "+fun 
+
+def name():
+  return "Prashant"
+
+print(display(name()))
+'''
+'''
+def display():
+  def message():
+    return "Hello"
+  return message()
+
+user_Var=display()
+print(user_Var)
+'''
+'''
+def task(lst):
+  for item in lst:
+    print(item)
+task([3,4]) 
+'''
+'''
+def factorial(n):
+  if n==0:
+    return 1
+  else:
+    result=n*factorial(n-1)
+    return result
+print(factorial(3))
+'''
