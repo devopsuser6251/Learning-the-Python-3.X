@@ -1,0 +1,23 @@
+# Lambda Functions
+def func(n):
+  return n**3
+
+print(func(2))
+user_var = lambda n:n**3
+print (user_var(2)) 
+
+user_io=lambda x: "Yes" if x%2==0 else "No"
+print(user_io(9))
+
+def add(a,b):
+  return a+b
+
+print(add(9,6))
+sum=lambda a,b:a+b
+print(sum(9,6))
+
+lst=[3,9,8,7,9]
+result=list(filter(lambda x:x%2==0,lst))
+print(result)
+for item in result:
+  print(item)
