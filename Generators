@@ -1,0 +1,33 @@
+#Decor Function
+
+def decor(fun):
+  def inner():
+    result=fun()
+    return result*2 
+  return inner
+
+@decor
+def num():
+  return 8
+
+print(num())
+
+def decorfunc(fun):
+  def innerfunc(n):
+    result= fun(n)
+    result+=' How are you'
+    return result
+  return innerfunc
+
+@decorfunc
+def hello(name):
+  return 'Hellow '+name
+
+print(hello('Prashant'))
+
+def customgen(x,y):
+  while x<y:
+    yield x
+    x+=1
+result=customgen(20,50)
+for item in result:print(item)
