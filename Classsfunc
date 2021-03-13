@@ -1,0 +1,21 @@
+#Define a instance method 
+class course:
+  def __init__(self,name,ratings):
+    self.name=name
+    self.ratings=ratings
+  def average(self):
+    numberofRatings=len(self.ratings)
+    average= sum(self.ratings)/numberofRatings
+    print("Average Rating for ",self.name," is ",average)
+
+c1= course("Python course",[1,2,3,4,4,5])
+print(c1.name)
+print(c1.ratings)
+c1.average()
+for item in c1.ratings:
+  print(item)
+
+c2=course("Java course",[3,3,3,5,4,5])
+print(c2.name)
+print(c2.ratings)
+c2.average()
